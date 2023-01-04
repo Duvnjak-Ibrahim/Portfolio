@@ -36,7 +36,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* A elements that don't have a class get default styles */
@@ -76,3 +76,23 @@ select {
 }
 
 
+.intro{
+  height: 100vh;
+  background-color: #22303f;
+  color: lightgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2{
+  
+}
+h1{
+  
+}
+h2{
+  
+}
