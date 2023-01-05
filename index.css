@@ -75,24 +75,65 @@ select {
   }
 }
 
-
+/* ******************** */
+      /* intro  */
 .intro{
   height: 100vh;
-  background-color: #22303f;
-  color: lightgreen;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: white;
+  color: #0bec47;
+  display: grid;
+  grid-template: 0.2em auto 100px auto auto auto 1fr  0.2em /0.2em  1fr auto 1fr 0.2em;
+
 }
 
-h1,
-h2{
-  
+.navbar{
+  height: 30px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding:0.2em; */
+  gap:1em;
+  font: normal;
+  text-transform: uppercase;
+  color: black;
+  grid-row:2;
+  grid-column: 3;
 }
-h1{
-  
+.navbar p{
+  text-shadow:  2px black;
+  font-weight: bold;
+  font-size: smaller;
+  cursor: pointer;
+  padding:0 0.5em;
 }
-h2{
+.navbar p:hover{
+  background: gray;
+  color: azure;
+  border-radius: 5px;
+}
+.intro-hello1{
   
+  
+  grid-row: 4;
+  grid-column: 3;
+
+}
+.intro-hello2{
+  grid-row: 5;
+  grid-column: 3;
+ 
+}
+.intro-p{
+  grid-row: 6;
+  grid-column: 3;
+}
+/* **************** */
+.middle{
+  height: 120vh;
+  background-color:#b1f3c3;
+}
+.outro{
+  height: 120vh;
+  background-color: black;
 }
