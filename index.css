@@ -82,10 +82,14 @@ select {
   background-color: white;
   color: #0bec47;
   display: grid;
-  grid-template: 0.2em auto 100px auto auto auto 1fr  0.2em /0.2em  1fr auto 1fr 0.2em;
+  grid-template:repeat(13,1fr) / repeat(13,1fr) ;
+  grid-gap: 8px;
 
 }
-
+.githubpng{
+  margin: 1em;
+  margin-top:0.1em;
+}
 .navbar{
   height: 30px;
   min-width: 100%;
@@ -97,8 +101,9 @@ select {
   font: normal;
   text-transform: uppercase;
   color: black;
-  grid-row:2;
-  grid-column: 3;
+  grid-row:1;
+  grid-column: 7;
+  margin-top: 0.3em;
 }
 .navbar p{
   text-shadow:  2px black;
@@ -113,20 +118,43 @@ select {
   border-radius: 5px;
 }
 .intro-hello1{
-  
-  
   grid-row: 4;
-  grid-column: 3;
+  grid-column: 4 /8;
+  }
 
-}
 .intro-hello2{
+  margin-top: -1.08em;
   grid-row: 5;
-  grid-column: 3;
- 
+  grid-column: 4 /10;
 }
 .intro-p{
-  grid-row: 6;
-  grid-column: 3;
+  margin-top: -2em;
+
+  grid-row: 6 / 8;
+  grid-column: 4/12;
+}
+.page-i1{
+  grid-row: 11;
+grid-column: 7;
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pipe1{
+  width: 2px;
+  height: 2em;
+  background-color: lightgreen;
+}
+.circle1 {
+  height: 50px;
+  width: 50px;
+  border: 1px solid lightgreen;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 /* **************** */
 .middle{
