@@ -36,7 +36,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Roboto Mono', monospace;
+  
 }
 
 /* A elements that don't have a class get default styles */
@@ -84,11 +84,12 @@ select {
   display: grid;
   grid-template:repeat(13,1fr) / repeat(13,1fr) ;
   grid-gap: 8px;
-
+  font-family: 'Roboto Mono', monospace;
 }
 .githubpng{
   margin: 1em;
   margin-top:0.1em;
+  
 }
 .navbar{
   height: 30px;
@@ -100,26 +101,32 @@ select {
   gap:1em;
   font: normal;
   text-transform: uppercase;
-  color: black;
   grid-row:1;
   grid-column: 7;
   margin-top: 0.3em;
+  font-family:'Segoe UI', Tahoma, sans-serif;
 }
 .navbar p{
+  color: lightgreen;
   text-shadow:  2px black;
-  font-weight: bold;
-  font-size: smaller;
+  font-weight: 800;
+  font-size: 0.8rem;
   cursor: pointer;
-  padding:0 0.5em;
+  padding: 0.3em 0.9em;
+  letter-spacing: 0.7px;
+  
+  
 }
 .navbar p:hover{
-  background: gray;
-  color: azure;
   border-radius: 5px;
+  background: rgb(92, 204, 92);
+  color: azure;
 }
 .intro-hello1{
+  /* font-size: 1.1rem; */
   grid-row: 4;
-  grid-column: 4 /8;
+  grid-column: 4 / 8;
+  /* font-weight: bold; */
   }
 
 .intro-hello2{
@@ -129,9 +136,13 @@ select {
 }
 .intro-p{
   margin-top: -2em;
-
   grid-row: 6 / 8;
   grid-column: 4/12;
+}
+.span-intro{
+  /* color: goldenrod; */
+  font-size: large;
+  font-weight: bold;
 }
 .page-i1{
   grid-row: 11;
@@ -143,13 +154,13 @@ flex-direction: column;
 }
 .pipe1{
   width: 2px;
-  height: 2em;
+  height: 2.5em;
   background-color: lightgreen;
 }
 .circle1 {
   height: 50px;
   width: 50px;
-  border: 1px solid lightgreen;
+  border: 3px solid lightgreen;
   border-radius: 50%;
   display: flex;
   justify-content: center;
