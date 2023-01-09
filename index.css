@@ -85,9 +85,10 @@ select {
   display: grid;
   grid-template:repeat(13,1fr) / repeat(13,1fr) ;
   grid-gap: 8px;
-  font-family: 'Roboto Mono', monospace;
+  font-family:'Segoe UI', Tahoma, sans-serif;
   
 }
+
 /* ************* line under intro section */
 /* .line-bottom{
   width: 90%;
@@ -139,22 +140,27 @@ select {
   grid-column: 4 / 8;
   color: rgb(89, 224, 89);
   /* font-weight: bold; */
+  color: green;
   }
 
 .intro-hello2{
   margin-top: -1.08em;
   grid-row: 5;
-  grid-column: 4 /10;
+  grid-column: 4 /12;
 }
 .intro-p{
   margin-top: -1.5em;
   grid-row: 6 / 8;
   grid-column: 4/12;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: black;
+  font-weight: 600;
 }
-.span-intro{
-  /* color: goldenrod; */
-  font-size: large;
+.span-green{
   font-weight: bold;
+  color: #0bec47;
+  letter-spacing: normal;
 }
 
 .page-i1{
@@ -216,9 +222,63 @@ flex-direction: column;
   grid-column: 8/13;
 }
 .middle-para{
-  grid-row: 4/10;
-  grid-column: 4/12;
+  grid-row: 4/7;
+  grid-column: 3/12;
   font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.span-green{
+  font-weight: bold;
+  color: #0bec47;
+  letter-spacing: normal;
+}
+.colored{
+  font-size: 3rem;
+}
+.box-middle{
+  grid-row: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  
+}
+.box-middle p{
+  margin-top: 0.2em;
+  font-weight: 600;
+}
+.box1{
+ grid-row: 8;
+ grid-column:3 / 6 ;
+}
+.box2{
+  grid-row: 8;
+  grid-column: 8 / 12;
+}
+.box3{
+ grid-row: 9;
+ grid-column:3 / 6 ;
+}
+.box4{
+  grid-row: 9;
+  grid-column: 8 / 12;
+}
+.box5{
+ grid-row: 10;
+ grid-column:3 / 6 ;
+}
+.box5 p{
+  text-align: center;
+}
+.box6{
+  grid-row: 10;
+  grid-column: 8 / 12;
+}
+.respo{
+  max-width: 70px;
+  height: 70px;
 }
 /* ****************** outro */
 .outro{

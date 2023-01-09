@@ -20,7 +20,20 @@ document.querySelector(".navbar-p")
   let y = window.scrollY
     // window.scrollBy(y,600)
     window.scrollTo({
-        top: 715,
+        top: 730,
+        
+        behavior: 'smooth'
+      });
+      
+      
+})
+
+document.querySelector(".circle1")
+.addEventListener("click",function(){
+  let y = window.scrollY
+    // window.scrollBy(y,600)
+    window.scrollTo({
+        top: 730,
         
         behavior: 'smooth'
       });
