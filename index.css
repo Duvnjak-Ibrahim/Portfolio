@@ -36,6 +36,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family:'Segoe UI', Tahoma, sans-serif;
   
 }
 
@@ -87,6 +88,15 @@ select {
   font-family: 'Roboto Mono', monospace;
   
 }
+/* ************* line under intro section */
+/* .line-bottom{
+  width: 90%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #0bec47;
+  grid-row: 14;
+  grid-column: 2 /13;
+} */
 .githubpng{
   margin: 1em;
   margin-top:0.1em;
@@ -149,7 +159,7 @@ select {
 
 .page-i1{
   grid-row: 11;
-grid-column: 7;
+grid-column: 7/8;
 display: flex;
 flex-direction: column;
   justify-content: center;
@@ -168,6 +178,15 @@ flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-family:'Segoe UI', Tahoma, sans-serif;
+  font-size: 1.2rem;
+}
+.circle1:hover{
+  background-color: black;
+  /* color: black; */
+  border: green 3px solid;
 
 }
 .para-page-i1{
@@ -179,16 +198,57 @@ flex-direction: column;
 /* **************** middle*/
 .middle{
   height: 120vh;
-  background-color:lightblue;
+  background-color:white;
   display: grid;
   grid-template: repeat(13,1fr) / repeat(13,1fr);
   grid-gap: 8px;
 }
-
+.line-about{
+  width: 100%;
+  height: 2px;
+  background-color: #0bec47;
+  grid-row: 2;
+  grid-column: 2/7;
+  margin-top: 1.5em;
+}
+.middle-h1{
+  grid-row: 2;
+  grid-column: 8/13;
+}
+.middle-para{
+  grid-row: 4/10;
+  grid-column: 4/12;
+  font-size: 1.1rem;
+}
 /* ****************** outro */
 .outro{
   height: 120vh;
-  background-color: black;
+  background-color: whitesmoke;
 }
-
-
+/* *********************** scroll things */
+.scroll-up{
+  position: fixed;
+  top: 80%;
+  z-index: 2;
+  /* padding: 0.4em; */
+  width: 50px;
+  height: 50px;
+  color: black;
+  border-radius: 50%;
+  font-family:'Segoe UI', Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1em;
+  background-color: #0bec47;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-up:hover{
+  color:#0bec47;
+  background-color:black;
+}
+.hidden{
+  display: none;
+}
