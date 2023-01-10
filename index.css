@@ -104,18 +104,21 @@ select {
   
 }
 .navbar{
+  position: fixed;
+  top: 0;
+  left:0;
+  
   height: 30px;
   min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding:0.2em; */
   gap:1em;
   font: normal;
   text-transform: uppercase;
   grid-row:1;
   grid-column: 7;
-  margin-top: 0.3em;
+  
   font-family:'Segoe UI', Tahoma, sans-serif;
 }
 .navbar p{
@@ -124,9 +127,12 @@ select {
   font-weight: 800;
   font-size: 0.8rem;
   cursor: pointer;
-  padding: 0.3em 0.9em;
+  /* padding:0.2em; */
+  padding: 1em 0.9em;
   letter-spacing: 0.7px;
-  
+  margin: 1em 0;
+  background-color: rgba(10, 10, 10, 0.9);
+  border-radius: 10px;
   
 }
 .navbar p:hover{
@@ -317,7 +323,7 @@ flex-direction: column;
 /* *********************** scroll things */
 .scroll-up{
   position: fixed;
-  top: 80%;
+  top: 88%;
   z-index: 2;
   /* padding: 0.4em; */
   width: 50px;
