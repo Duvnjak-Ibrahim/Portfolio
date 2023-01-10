@@ -15,7 +15,7 @@ document.addEventListener("scroll",function(){
     
 })
 // ***************** when about is clicked
-document.querySelector(".navbar-p")
+document.querySelector(".para-about")
 .addEventListener("click",function(){
   let y = window.scrollY
     // window.scrollBy(y,600)
@@ -28,18 +28,33 @@ document.querySelector(".navbar-p")
       
 })
 
-document.querySelector(".circle1")
+document.querySelector(".para-projects")
 .addEventListener("click",function(){
   let y = window.scrollY
     // window.scrollBy(y,600)
     window.scrollTo({
-        top: 730,
+        top: 1800,
         
         behavior: 'smooth'
       });
       
       
 })
+
+document.querySelector(".para-contact")
+.addEventListener("click",function(){
+  let y = window.scrollY
+    // window.scrollBy(y,600)
+    window.scrollTo({
+        top: 2700,
+        
+        behavior: 'smooth'
+      });
+      
+      
+})
+
+
 // ***************** when house is clicked
   document.querySelector(".scroll-up")
   .addEventListener("click",function(){
@@ -50,3 +65,30 @@ document.querySelector(".circle1")
       behavior:"smooth"
     })
   })
+  // ****************************** form data and contact stuff
+  form.addEventListener("submit",function(e){
+    e.preventDefault()
+    
+    const loginFormData = new FormData(form)
+    const userName = loginFormData.get("urName")
+    console.log(userName);
+    spanName.textContent=userName
+    form.value =""
+   
+})
+  // **************************** sending email
+ function sendEmail(){
+
+   Email.send({
+     Host : "smtp.elasticemail.com",
+     Username : "duvnjak.ibrahim2004@gmail.com",
+     Password : "jsiammji18",
+     To : 'duvnjak.ibrahim2004@gmail.com',
+     From : document.querySelector("#email").value,
+     Subject : "This is the subject",
+     Body : "And this is the body"
+    }).then(
+      message => alert(message)
+      );
+      
+    }
