@@ -92,3 +92,9 @@ document.querySelector(".para-contact")
       );
       
     }
+
+    document.querySelector("#email").addEventListener("click",
+    function(){
+
+      document.getElementById("email").value ="yoooo"
+    })

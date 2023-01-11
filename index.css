@@ -104,9 +104,6 @@ select {
   
 }
 .navbar{
-  position: fixed;
-  top: 0;
-  left:0;
   
   height: 30px;
   min-width: 100%;
@@ -135,7 +132,8 @@ select {
   border-radius: 10px;
   
 }
-.navbar p:hover{
+.navbar p:hover,
+.navbar p:focus{
   border-radius: 5px;
   background: rgb(92, 204, 92);
   color: azure;
@@ -340,7 +338,8 @@ flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.scroll-up:hover{
+.scroll-up:hover,
+.scrol-up:focus{
   color:#0bec47;
   background-color:black;
 }
@@ -366,7 +365,7 @@ flex-direction: column;
 }
 .middle-h2{
   grid-row: 2;
-  grid-column: 2/6;
+  grid-column: 2/7;
 }
 /* ***************************** Contact Me */
 .contact-me{
@@ -447,7 +446,8 @@ flex-direction: column;
   margin: 1em;
   cursor: pointer;
 }
-.form button:hover{
+.form button:hover,
+.form button:focus{
   color: #0bec47;
  background-color: black;
 }
