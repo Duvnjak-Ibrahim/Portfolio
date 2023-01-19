@@ -20,7 +20,7 @@ document.querySelector(".para-about")
   let y = window.scrollY
     // window.scrollBy(y,600)
     window.scrollTo({
-        top: 730,
+        top: 810,
         
         behavior: 'smooth'
       });
@@ -46,7 +46,7 @@ document.querySelector(".para-contact")
   let y = window.scrollY
     // window.scrollBy(y,600)
     window.scrollTo({
-        top: 2700,
+        top: 4700,
         
         behavior: 'smooth'
       });

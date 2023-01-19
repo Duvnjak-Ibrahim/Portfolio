@@ -362,10 +362,11 @@ flex-direction: column;
 /* ****************** projects */
 .projects{
   margin-top: 2em;
-  height: 2464px;
+  height: 2650px;
   background-color: white;
   display: grid;
   grid-template:repeat(13,1fr) / repeat(13,1fr) ;
+  min-width: 100%;
   grid-gap: 8px;
   background-color: rgb(10, 25, 43);
 
@@ -385,12 +386,12 @@ flex-direction: column;
 }
 /* ***************************** REAL projects */
 .projects-real{
-  height: 2400px;
+  height: 2470px;
   display: flex;
   flex-direction: column;
   grid-gap: 3em;
 
-  border:2px solid black;
+  /* border:2px solid black; */
   grid-row: 3/12;
   grid-column: 1/14;
 }
@@ -409,6 +410,42 @@ flex-direction: column;
 }
 .project-4{
   margin-bottom: 2em;
+}
+.pr2-3{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  gap:2em;
+}
+@media (min-width:650px){
+  .pr2-3{
+   
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    gap:1em;
+    margin: 0 0.5em ;
+  }
+
+
+  .project-1,
+  .project-2,
+  .project-3,
+  .project-4{
+    max-width: 400px;
+    /* object-fit: contain; */
+  }
+  .project-1 img,
+  .project-2 img,
+  .project-3 img,
+  .project-4 img{
+    max-width:100%;
+    margin: 0 auto;
+  }
+ .projects{
+  height: 1800px;
+ }
 }
 /* ************************** Project1 */
 .project-1 p,
@@ -494,7 +531,7 @@ flex-direction: column;
 
 /* ***************************** Contact Me */
 .contact-me{
-  height: 1600px;
+  height: 800px;
   display: grid;
   grid-template: repeat(13,1fr) / repeat(13,1fr);
   grid-gap: 8px;
@@ -506,7 +543,7 @@ flex-direction: column;
   background-color:white;
   border-radius: 10px;
   box-shadow: 0 0 5px black;
-  grid-row: 12;
+  grid-row: 7;
   grid-column: 2/13;
   display: flex;
   flex-direction: column;
@@ -593,17 +630,20 @@ flex-direction: column;
   width: 100%;
   height: 3px;
   background-color: #0bec47;
-  grid-row: 11;
+  grid-row: 6;
   grid-column: 2/5;
   margin-top: 1.5em;
 
 }
 .middle-h3{
-  grid-row: 11;
+  grid-row: 6;
   grid-column: 6/13;
  
 }
-
+.page-i3{
+  grid-row: 2;
+  margin-top: 2em;
+}
 /* ************* max width */
 .intro,
 .middle,
