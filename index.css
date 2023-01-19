@@ -37,7 +37,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family:'Segoe UI', Tahoma, sans-serif;
-  
+
 }
 
 /* A elements that don't have a class get default styles */
@@ -93,7 +93,7 @@ a:hover{
   grid-template:repeat(13,1fr) / repeat(13,1fr) ;
   grid-gap: 8px;
   font-family:'Segoe UI', Tahoma, sans-serif;
-  
+
 }
 
 /* ************* line under intro section */
@@ -255,6 +255,8 @@ flex-direction: column;
   display: grid;
   grid-template: repeat(13,1fr) / repeat(13,1fr);
   grid-gap: 8px;
+
+
 }
 .line-about{
   width: 100%;
@@ -360,11 +362,13 @@ flex-direction: column;
 /* ****************** projects */
 .projects{
   margin-top: 2em;
-  height: 2000px;
+  height: 2464px;
   background-color: white;
   display: grid;
   grid-template:repeat(13,1fr) / repeat(13,1fr) ;
   grid-gap: 8px;
+  background-color: rgb(10, 25, 43);
+
 }
 .line-about2{
   width: 100%;
@@ -396,34 +400,76 @@ flex-direction: column;
 .project-4
 {
   width: 80%;
-  height: 700px;
+  height: auto;
+  /* height: 700px; */
   border: 3px solid #0bec47;
-  background-color: aquamarine;
+  background-color:#0bec47;
   margin: 1.5em auto 0 auto;
+  border-radius: 10px;
 }
 .project-4{
   margin-bottom: 2em;
 }
 /* ************************** Project1 */
 .project-1 p,
-.project-1 h1{
-  margin: 0.5em;
+.project-1 h1,
+
+.project-2 p,
+.project-2 h1,
+
+.project-3 p,
+.project-3 h1,
+
+.project-4 p,
+.project-4 h1
+{
+  margin: 1.5em;
+  margin-bottom: 0.5em;
   margin-top: 1em;
   text-align: center;
   font-weight: 600;
+  color: white;
 }
-.project-1 h1{
+.project-1 h1,
+.project-2 h1,
+.project-3 h1,
+.project-4 h1
+{
   font-size: 1.3rem;
+  font-weight: 900;
+  /* color: rgba(0, 153, 255, 0.87); */
+
 }
-.project-1-describe{
+.project-1 p,
+.project-2 p,
+.project-3 p,
+.project-4 p
+{
+  font-size: 0.85rem;
+  color: black;
   
 }
-.project-1-bottom{
+.project-1 img,
+.project-2 img,
+.project-3 img,
+.project-4 img
+{
+  border-radius: 10px;
+}
+.project-1-bottom,
+.project-2-bottom,
+.project-3-bottom,
+.project-4-bottom
+{
   display: flex;
   flex-direction: column;
   justify-content: stretch;
 }
-.project-1 a{
+.project-1 a,
+.project-2 a,
+.project-3 a,
+.project-4 a
+{
   margin: auto;
   margin-top: 0.2em;
   margin-bottom: 0.2em;
@@ -431,14 +477,20 @@ flex-direction: column;
   /* border: 1px solid black; */
   border-radius: 10px;
   padding: 0.5em;
-  width: 70%;
-  background-color: #0bec47;
+  width: 95%;
+  background-color: black;
   color: white;
   font-size:1.1rem;
   font-weight: 600;
 }
+.project-1 a:hover,
+.project-2 a:hover,
+.project-3 a:hover,
+.project-4 a:hover{
+  color: #0bec47;
+}
 
-
+/* ************************************* */
 
 /* ***************************** Contact Me */
 .contact-me{
@@ -549,7 +601,9 @@ flex-direction: column;
 .middle-h3{
   grid-row: 11;
   grid-column: 6/13;
+ 
 }
+
 /* ************* max width */
 .intro,
 .middle,
