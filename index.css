@@ -76,6 +76,13 @@ select {
   }
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: red;
+}
 /* ******************** */
       /* intro  */
 .intro{
@@ -226,12 +233,13 @@ flex-direction: column;
 }
 /* ****** page 3 */
 .page-i3{
-  grid-row: 12;
+  grid-row: 13;
 grid-column: 7/8;
 display: flex;
 flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 15em;
 }
 .para-page-i3{
   font-size: 1.5rem;
@@ -373,11 +381,12 @@ flex-direction: column;
 }
 /* ***************************** REAL projects */
 .projects-real{
-  height: 2000px;
-  display: grid;
-  grid-template: repeat(12,1fr) / repeat(12,1fr);
+  height: 2400px;
+  display: flex;
+  flex-direction: column;
   grid-gap: 3em;
-  background-color: #0bec47;
+
+  border:2px solid black;
   grid-row: 3/12;
   grid-column: 1/14;
 }
@@ -386,27 +395,54 @@ flex-direction: column;
 .project-3,
 .project-4
 {
-  grid-row: 1/4;
-  grid-column: 1/14;
-  border: 1px solid black;
-  margin: 1.5em 4em 0 4em;
-}
-.project-2{
-  grid-row: 4/7;
-  margin: 0 4em;
-}
-.project-3{
-  grid-row: 7/10;
-  margin: 0 4em;
+  width: 80%;
+  height: 700px;
+  border: 3px solid #0bec47;
+  background-color: aquamarine;
+  margin: 1.5em auto 0 auto;
 }
 .project-4{
-  grid-row: 10/13;
-  margin: 0 4em;
   margin-bottom: 2em;
 }
+/* ************************** Project1 */
+.project-1 p,
+.project-1 h1{
+  margin: 0.5em;
+  margin-top: 1em;
+  text-align: center;
+  font-weight: 600;
+}
+.project-1 h1{
+  font-size: 1.3rem;
+}
+.project-1-describe{
+  
+}
+.project-1-bottom{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.project-1 a{
+  margin: auto;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  text-align: center;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 0.5em;
+  width: 70%;
+  background-color: #0bec47;
+  color: white;
+  font-size:1.1rem;
+  font-weight: 600;
+}
+
+
+
 /* ***************************** Contact Me */
 .contact-me{
-  height: 120vh;
+  height: 1600px;
   display: grid;
   grid-template: repeat(13,1fr) / repeat(13,1fr);
   grid-gap: 8px;
@@ -418,7 +454,7 @@ flex-direction: column;
   background-color:white;
   border-radius: 10px;
   box-shadow: 0 0 5px black;
-  grid-row: 10;
+  grid-row: 12;
   grid-column: 2/13;
   display: flex;
   flex-direction: column;
@@ -453,7 +489,7 @@ flex-direction: column;
     grid-column: 7/13;
   }
 }
-/* **************************** */
+/* **************************** END OF MEDIA QUERY  */
 .form h1{
   text-align: center;
   font-size: 1.5rem;
@@ -505,13 +541,13 @@ flex-direction: column;
   width: 100%;
   height: 3px;
   background-color: #0bec47;
-  grid-row: 9;
+  grid-row: 11;
   grid-column: 2/5;
   margin-top: 1.5em;
 
 }
 .middle-h3{
-  grid-row: 9;
+  grid-row: 11;
   grid-column: 6/13;
 }
 /* ************* max width */
