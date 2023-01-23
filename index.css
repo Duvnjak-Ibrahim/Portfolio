@@ -442,6 +442,7 @@ flex-direction: column;
   .project-4 img{
     max-width:100%;
     margin: 0 auto;
+    
   }
  .projects{
   height: 1800px;
@@ -520,6 +521,7 @@ flex-direction: column;
   font-size:1.1rem;
   font-weight: 600;
 }
+
 .project-1 a:hover,
 .project-2 a:hover,
 .project-3 a:hover,
